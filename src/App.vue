@@ -66,7 +66,7 @@
             </el-main>
             <el-footer id="app-footer">
                 <el-row>
-                   <br>Kashima·Some rights reserved</>
+                   <br>Kashima·Some rights reserved</br>
                 </el-row>
             </el-footer>
         </el-container>
