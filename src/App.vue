@@ -11,7 +11,7 @@
                         multiple>
                     <i class="el-icon-upload"></i>
                     <div class="el-upload__text">将文件拖到此处，或<em>点击选择</em></div>
-                    <div class="el-upload__tip" slot="tip">本工具仅在浏览器内对文件进行解锁，无需消耗流量</div>
+                    <div class="el-upload__tip" slot="tip">此工具仅在浏览器内对文件进行解锁，无需消耗流量</div>
                 </el-upload>
 
                 <el-row id="app-control">
@@ -66,17 +66,7 @@
             </el-main>
             <el-footer id="app-footer">
                 <el-row>
-                    音乐解锁：移除已购音乐的加密保护。
-                    目前支持网易云音乐(ncm)和QQ音乐(qmc0, qmc3, qmcflac, qmcogg, mflac)。
-                    <a href="https://github.com/ix64/unlock-music/wiki/使用提示" target="_blank">使用提示</a>
-                </el-row>
-                <el-row>
-                    <span>Copyright &copy; 2019</span>
-                    <a href="https://github.com/ix64" target="_blank">MengYX</a>
-                    音乐解锁使用
-                    <a href="https://github.com/ix64/unlock-music/blob/master/LICENSE" target="_blank">MIT许可协议</a>
-                    开放
-                    <a href="https://github.com/ix64/unlock-music" target="_blank">源代码</a>
+                   <br>Kashima·Some rights reserved</>
                 </el-row>
             </el-footer>
         </el-container>
@@ -110,9 +100,9 @@
                 document.getElementById("loader-mask").remove();
                 this.$notify.info({
                     title: '离线使用',
-                    message: '我们使用PWA技术，无网络也能使用<br/>' +
-                        '最近更新：支持qmcogg,mflac<br/>' +
-                        '点击查看 <a target="_blank" href="https://github.com/ix64/unlock-music/wiki/使用提示">使用提示</a>',
+                    message: '此工具支持PWA，无网络也可以转换<br/>' +
+                        '加载缓慢请刷新网页<br/>' +
+                        '点击查看 <a target="_blank" href="https://milk.amanohina.com/unlock-music">使用提示</a>',
                     dangerouslyUseHTMLString: true,
                     duration: 10000,
                     position: 'top-left'
@@ -160,7 +150,7 @@
                         this.$notify.error({
                             title: '出现问题',
                             message: data.message + "，" + file.name +
-                                '，参考<a target="_blank" href="https://github.com/ix64/unlock-music/wiki/使用提示">使用提示</a>',
+                                '，参考<a target="_blank" href="#使用提示">使用提示</a>',
                             dangerouslyUseHTMLString: true,
                             duration: 6000
                         });
